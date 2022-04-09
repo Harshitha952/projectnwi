@@ -51,9 +51,9 @@
       
     r is the nominal annual interest rate.</br>
       
-    n is the number of compounding periods in one year.</br>
+    m is the number of compounding periods in one year.</br>
       
-    m is the number of years.</p>
+    n is the number of years.</p>
   </div>
 </body>
 
@@ -68,7 +68,7 @@
     amount = p*Math.pow((1 +r/100),t);
     ci = amount-p;
     document.getElementById ('num').innerHTML ="Simple interest : "+si;
-    document.getElementById ('num1').innerHTML ="Compound interest (n=1) : "+ci;
+    document.getElementById ('num1').innerHTML ="Compound interest (m=1) : "+ci;
     }
     </script>
 </html>
