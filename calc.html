@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="bmi.js"></script>
+    <link rel="stylesheet" href="./bmi.css">
+</head>
+
+<body>
+	<div class="navbar">
+		<a href="./index.html">Home</a>
+		<a href="./wc.html">Text Tools</a>
+		<div class="dropdown">
+		  <button class="dropbtn">Calculator
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="./sqroot.html">Square root calculator</a>
+			<a href="./calc.html">BMI Calculator</a>
+			<a href="./SiandCi.html">SI and CI Calculator</a>
+		  </div>
+		</div>
+	</div>
+
+	<div>
+		<h2>BMI Categories Table</h2>
+
+<table id="customers">
+  <tr>
+    <th>BMI Category</th>
+    <th>BMI Range</th>
+    <th>Health Risk</th>
+  </tr>
+  <tr>
+    <td>Under Weight</td>
+    <td>18.4 and Below</td>
+    <td>Malnutrition Risk</td>
+  </tr>
+  <tr>
+    <td>Normal Weight</td>
+    <td>18.5 - 24.9</td>
+    <td>Low Risk</td>
+  </tr>
+   <tr>
+    <td>Over Weight</td>
+    <td>25 - 29.9</td>
+    <td>Enhanced Risk</td>
+  </tr>
+  <tr>
+    <td>Moderately Obese</td>
+    <td>30 - 34.9</td>
+    <td>Medium Risk</td>
+  </tr>
+  <tr>
+    <td>Severely Obese</td>
+    <td>35 - 39.9</td>
+    <td>High Risk</td>
+  </tr>
+  <tr>
+    <td>Very Severely Obese</td>
+    <td>40 and above</td>
+    <td>Very High Risk</td>
+  </tr>
+</table>
+
+	</div>
+	<div class="container">
+		<h1>BMI Calculator</h1>
+
+		<p>Height (in cm) :</p>
+
+		<input type="text" id="height">
+
+		<p>Weight (in kg) :</p>
+
+		<input type="text" id="weight">
+        </br></br>
+		<button class="buttontnDiv" id="btn">Calculate</button>
+        </br></br>
+		<div id="result"></div>
+	</div>
+</body>
+
+</html>

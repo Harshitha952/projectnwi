@@ -1,0 +1,74 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="./sici.css">
+    </head>
+<body>
+  <div class="navbar">
+		<a href="./index.html">Home</a>
+		<a href="./wc.html">Text Tools</a>
+		<div class="dropdown">
+		  <button class="dropbtn">Calculator
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="./sqroot.html">Square root calculator</a>
+			<a href="./calc.html">BMI Calculator</a>
+			<a href="./SiandCi.html">SI and CI Calculator</a>
+		  </div>
+		</div>
+	</div>
+  <div class="container">
+    <h2>Simple and Compound Intrest Calculator</h2></br>
+    <label>Enter Principal :</label>
+    <input type="text" name="a" id="first"/></br></br>
+    <label>Enter Time Period :</label>
+    <input type="text" name="b" id="second"/></br></br>
+    <label>Enter Rate of Interest(%):</label>
+    <input type="text" name="c" id="third"/></br></br>
+    <div class="buttonDiv">
+        <input type="Submit" id="calculate" value="Calculate" onclick="simple_interest()" /> 
+      </div>
+    <p id="num"> </p>
+    <p id="num1"></p>
+  </div>
+  <div id="par">
+
+    <p><B>Simple Interest Calculation:</B></br></br>
+
+      The simple interest amount is equal to the principal amount times the annual interest rate divided by the number of</br>
+      periods per year m, times the number of periods n</br></br>
+      
+      simple interest amount = principal amount × (rate / m) × n</p>
+    <p><B>Compound Interest Calculation:</B> </br></br>
+      The amount after n years An is equal to the initial amount A0 times one plus the annual interest rate r divided by
+    </br>the number of compounding periods in a year m raised to the power of m times n
+      
+    </br></br>
+      
+    An is the amount after n years (future value).</br>
+      
+    A0 is the initial amount (present value).</br>
+      
+    r is the nominal annual interest rate.</br>
+      
+    m is the number of compounding periods in one year.</br>
+      
+    n is the number of years.</p>
+  </div>
+</body>
+
+<script type="text/javascript">
+    function simple_interest()
+    {
+    var p,t,r,si,ci;
+    p = document.getElementById ("first").value;
+    t = document.getElementById ("second").value;
+    r = document.getElementById ("third").value;
+    si = parseInt((p*t*r)/100 );
+    amount = p*Math.pow((1 +r/100),t);
+    ci = amount-p;
+    document.getElementById ('num').innerHTML ="Simple interest : "+si;
+    document.getElementById ('num1').innerHTML ="Compound interest (n=1) : "+ci;
+    }
+    </script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./wc.css">
+
+</head>
+
+<body style="text-align: center;">
+	<div class="navbar">
+		<a href="./index.html">Home</a>
+		<a href="./wc.html">Text Tools</a>
+		<div class="dropdown">
+		  <button class="dropbtn">Calculator
+			<i class="fa fa-caret-down"></i>
+		  </button>
+		  <div class="dropdown-content">
+			<a href="./sqroot.html">Square root calculator</a>
+			<a href="./calc.html">BMI Calculator</a>
+			<a href="./SiandCi.html">SI and CI Calculator</a>
+		  </div>
+		</div>
+	</div>
+	<h1>Word and Character Counter</h1>
+    <p>
+		Type in the textbox and click on the button to get word and character count.
+	</p>
+	<textarea id="inputField" rows=10 cols="60"></textarea>
+	<br><br>
+
+	<button onclick="countWords()">
+		Count
+	</button>
+	<br><br>
+
+    <p> Word Count:
+		<span id="show"></span>
+	</p>
+    <p> Character Count:
+		<span id="charc"></span>
+	</p>
+
+	<script>
+		function countWords() {
+
+			var text = document.getElementById("inputField").value;
+			var numWords = 0;
+
+			for (var i = 0; i < text.length; i++) {
+				var currentCharacter = text[i];
+				if (currentCharacter == " ") {
+					numWords += 1;
+				}
+			}
+
+			numWords += 1;
+
+			document.getElementById("show").innerHTML = numWords;
+            document.getElementById("charc").innerHTML = text.length;
+		}
+	</script>
+</body>
+
+</html>

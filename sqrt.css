@@ -1,0 +1,111 @@
+
+.container
+{
+  background-color:white;
+  border:2px solid #800000;
+  display:block;
+  margin:25px;
+  padding: 10px;
+  width: 335px;
+  height: 250px;
+  background-color: rgb(197, 240, 240);
+}
+h2, #numberText
+{
+  text-align:center;
+}
+.buttonDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+#calculate
+{
+  background-color: #ff4d4d;
+  color: black; 
+  border: 2px solid #800000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+}
+
+#calculate:hover{
+    color: white;
+    background-color: #4CAF50;
+   }
+label
+{
+  margin-left: 20px;
+  font-weight:bold;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  margin-bottom: 15px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
